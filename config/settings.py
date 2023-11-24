@@ -16,8 +16,11 @@ DEBUG =con('DEBUG',cast=bool)
 
 ALLOWED_HOSTS =con('ALLOWED_HOSTS').split(',')
 
-MY_APPS=[
+AUTH_USER_MODEL = 'accounts.CustomUser'
 
+MY_APPS=[
+    'apps.accounts',
+    'apps.news',
 ]
 
 # Application definition
